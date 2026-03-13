@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: instacart
+    database: INSTACART_STAGING
+    schema: INSTACART
+    tables:
+      - name: churn_flags
+      - name: retention_metrics
