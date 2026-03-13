@@ -1,3 +1,9 @@
+-- Model: fct_order_sequence
+-- Depends on: stg_retention
+-- Description: Exposes order milestone retention curve for Tableau.
+--              Shows customer drop-off across order numbers.
+--              Critical window (orders 5-10) visible in retention_rate decline.
+
 with retention as (
     select * from {{ ref('stg_retention') }}
 )

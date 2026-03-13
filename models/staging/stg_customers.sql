@@ -1,3 +1,11 @@
+-- this is from churn flags table from snowflake
+
+-- Model: stg_customers
+-- Source: INSTACART_STAGING.INSTACART.CHURN_FLAGS
+-- Description: Staging model for customer-level churn data. One row per customer.
+--              Named after the business entity (customers) not the source table.
+--              No transformation — clean passthrough for downstream mart models.
+
 with source as (
     select * from {{ source('instacart', 'churn_flags') }}
 )
