@@ -1,5 +1,5 @@
-with retention as (
-    select * from {{ ref('stg_retention') }}
+with source as (
+    select * from {{ source('instacart', 'retention_metrics') }}
 )
 
 select
@@ -8,5 +8,4 @@ select
     customer_segment,
     customers_reached,
     retention_rate
-from retention
-order by order_milestone
+from source
