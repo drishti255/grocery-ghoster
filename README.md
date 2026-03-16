@@ -21,7 +21,7 @@ Full disclosure: I'm an Instacart member myself. I stopped ordering regularly be
 
 ## The Dataset
 
-Public Instacart dataset from Kaggle. ~3.3 million orders across 206,000 customers. You can download the raw data [here](https://www.kaggle.com/c/instacart-market-basket-analysis/data).
+Public Instacart dataset from Kaggle. ~3.3 million orders across 206,000 customers. You can download the raw data [here](https://www.kaggle.com/datasets/yasserh/instacart-online-grocery-basket-analysis-dataset).
 
 I started with 6 raw files and cleaned them down to one row per customer with four features:
 
